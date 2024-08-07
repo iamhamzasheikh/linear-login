@@ -1,0 +1,204 @@
+.card-main-div {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  margin: 0;
+  padding: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10px;
+}
+
+.linear-ball {
+  width: 70px;
+  height: 70px;
+  bottom: 10px;
+  left: 20px;
+  position: absolute;
+
+}
+.gradient-fab {
+  --background: linear-gradient(to bottom, red 0%, #D8BFD8 50%, blue 100%);
+}
+.sky-div {
+  width: 100%;
+  height: 100vh;
+  border-bottom-left-radius: 1000px;
+  margin: 0;
+  padding: 0;
+  background: skyblue;
+  position: fixed;
+}
+.linear-div {
+  background: linear-gradient(to bottom, red 0%, #D8BFD8 50%, blue 100%);
+  width: 100%;
+  height: 97vh;
+  border-bottom-left-radius: 1000px;
+  margin: 0;
+  padding: 0;
+}
+
+.person-icon {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 12%;
+  left: 70%;
+  transform: translate(-50% , -50%);
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+.person-icon > ion-icon {
+  width: 140px;
+  height: 140px;
+  color: white; 
+}
+
+.inputs-field {
+  border: 2px solid transparent;
+  position: absolute;
+  background: transparent;
+  width: 45%;
+  height: 250px;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50% , -50%);
+}
+.inputs-field .name-input > input {
+  background-color: transparent;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  outline: none;
+  border-bottom:  2px solid white;
+}
+.login-btn {
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  transform: translate(-50% , -50%);
+  width: 45%;
+  background: transparent;
+}
+
+.login-btn > ion-button {
+  width: 100%;
+}
+
+.login-via {
+  background: transparent;
+  width: 45%;
+  height: 80px;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  transform: translate(-50% , -50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+.login-via > ion-list {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+}
+
+.login-via > ion-list >ion-icon {
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+// CSS for mobile screens 
+
+@media (max-width: 768px) {
+  .card-main-div {
+    width: 100%; /* Adjust as needed for mobile view */
+    height: 100vh; /* Adjust as needed for mobile view */
+  }
+
+  .fixed-fab {
+    bottom: 20px; /* Adjust as needed for mobile view */
+    right: 20px; /* Adjust as needed for mobile view */
+  }
+}
+
+@media (max-width: 576px) {
+  .card-main-div {
+    border-radius: 0px;
+
+  }
+
+  .login-via {
+    top: 72%;
+    left: 50%;
+  }
+
+  .inputs-field {
+    position: absolute;
+    background: transparent;
+    width: 65%;
+    height: 250px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  .inputs-field .name-input > input {
+    background-color: transparent;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    outline: none;
+    border-bottom:  2px solid white;
+  }
+  .sky-div {
+    height: 100vh;
+  }
+  .linear-div {
+    height: 98%;
+    border-bottom-left-radius: 700px;
+  }
+
+  .login-btn {
+    top: 60%;
+    left: 50%;
+    width: 65%;
+  }
+
+
+
+
+
+  .person-icon {
+    top: 10%;
+    left: 50%;
+  }
+
+
+}
+
+@media (max-width: 256px) {
+  .linear-ball {
+    width: 35px;
+    height: 35px;
+    bottom: 40px;
+    left: 17px;
+    position: fixed;
+  }
+
+  .gradient-fab{
+    width: 25px;
+    height: 25px;
+  }
+}
